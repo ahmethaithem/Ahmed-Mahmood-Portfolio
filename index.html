@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101427">
+<meta name="description" content="Ahmed Mahmood — software engineer and Unity game developer. Explore Skate Run, Pet Rescue: Homebound, PrivacyGuard, Tappy, and more projects.">
+<title>AHMED MAHMOOD Portfolio</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="waveCanvas" aria-hidden="true"></canvas><div class="background-veil" aria-hidden="true"></div><div class="digits" id="digits" aria-hidden="true"></div>
+<header class="site-header wrap">
+<a href="#home" class="brand" aria-label="Ahmed Mahmood, home"><span class="brand-mark">&lt;/&gt;</span><span>Ahmed Mahmood</span></a>
+<nav id="primaryNav" class="nav" aria-label="Main navigation"><a class="active" href="#home">Home</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+<a class="header-contact" href="mailto:ahmethaithem@gmail.com">Let's Connect <span>↗</span></a>
+<button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+</header>
+<main>
+<section id="home" class="hero wrap">
+ <div class="hero-copy">
+  <span class="eyebrow"><span class="status-dot"></span> PORTFOLIO / 2026</span>
+  <h1>Ahmed <span>Mahmood.</span></h1>
+  <h2>Software Engineer <em>·</em> Game Developer</h2>
+  <p>I build thoughtful games, practical Android apps, and software that combines clean engineering with creative experiences.</p>
+  <div class="hero-actions"><a href="#projects" class="btn btn-main">Explore Projects <span>↗</span></a><a href="https://github.com/ahmethaithem" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub <span>↗</span></a></div>
+  <div class="hero-stack"><span>UNITY</span><b>·</b><span>C#</span><b>·</b><span>ANDROID</span><b>·</b><span>KOTLIN</span><b>·</b><span>FULL-STACK</span></div>
+ </div>
+ <div class="portrait-panel">
+  <div class="portrait-aura"></div><div class="portrait-base"></div>
+  <img class="portrait-photo" id="portraitPhoto" src="assets/portrait.png" alt="Ahmed Mahmood" fetchpriority="high">
+  <div class="portrait-placeholder" id="portraitPlaceholder" aria-hidden="true"><span>AM</span><small>ADD PORTRAIT TO ASSETS</small></div>
+  <div class="portrait-label"><span class="label-glow"></span> BUILDING WHAT'S NEXT <span class="label-code">&lt;/&gt;</span></div>
+ </div>
+</section>
+<section class="featured-section wrap" id="projects">
+ <div class="section-title"><div><div class="kicker">01 / SELECTED WORK</div><h2>Featured <span>Projects</span></h2></div><a class="section-link" href="#all-projects">View all projects <span>↗</span></a></div>
+ <div class="featured-grid">
+  <article class="feature-card"><button class="cover-button" data-open="skate" aria-label="View Skate Run details"><img src="assets/skate-run/cover.png" alt="Skate Run official cover artwork" loading="lazy"><span class="cover-shade"></span><span class="card-index">01 / UNITY</span></button><div class="feature-body"><div class="feature-heading"><h3>Skate Run</h3><span class="round-icon">↗</span></div><p>A fast-paced 3D skateboarding runner: dodge traffic, navigate obstacles, collect coins and escape the chase.</p><div class="chips"><span>Unity</span><span>C#</span><span>3D Game</span></div><button class="text-button" data-open="skate">Explore project <span>↗</span></button></div></article>
+  <article class="feature-card"><button class="cover-button" data-open="pet" aria-label="View Pet Rescue details"><img src="assets/pet-rescue-concept.webp" alt="Illustrative artwork for Pet Rescue: Homebound, not actual gameplay" loading="lazy"><span class="cover-shade"></span><span class="card-index">02 / UNITY</span><span class="concept-label">CONCEPT ART</span></button><div class="feature-body"><div class="feature-heading"><h3>Pet Rescue: Homebound</h3><span class="round-icon">↗</span></div><p>A mobile puzzle project blending Match-3 objectives and physics-based rescue mechanics. In development.</p><div class="chips"><span>Unity</span><span>C#</span><span>Match-3</span></div><button class="text-button" data-open="pet">Explore project <span>↗</span></button></div></article>
+  <article class="feature-card"><button class="cover-button privacy-cover" data-open="privacy" aria-label="View PrivacyGuard details"><img id="privacyImage" src="assets/privacyguard-dashboard.png" alt="Original PrivacyGuard Android application dashboard screenshot" loading="lazy"><span class="privacy-fallback" id="privacyFallback"><span class="shield-symbol">⬡</span><b>PrivacyGuard</b><small>Android privacy analysis</small></span><span class="card-index">03 / ANDROID</span></button><div class="feature-body"><div class="feature-heading"><h3>PrivacyGuard</h3><span class="round-icon">↗</span></div><p>A native Android privacy analyzer that reviews app permissions and helps make privacy risks easier to understand.</p><div class="chips"><span>Kotlin</span><span>Android</span><span>Jetpack Compose</span></div><button class="text-button" data-open="privacy">Explore project <span>↗</span></button></div></article>
+  <article class="feature-card"><a class="cover-button" href="https://ahmethaithem.github.io/Tappy-Demo/" target="_blank" rel="noopener noreferrer" aria-label="Open Tappy live demo"><img src="assets/tappy-demo.webp" alt="Screenshot of the real Tappy loyalty platform demo website with a lime-green digital stamp card" loading="lazy"><span class="cover-shade"></span><span class="card-index">04 / WEB SAAS</span></a><div class="feature-body"><div class="feature-heading"><h3>Tappy</h3><span class="round-icon">↗</span></div><p>A digital loyalty platform concept for businesses, with stamp cards, rewards and an interactive browser-based demo.</p><div class="chips"><span>Web App</span><span>SaaS</span><span>Digital Loyalty</span></div><a class="text-button" href="https://ahmethaithem.github.io/Tappy-Demo/" target="_blank" rel="noopener noreferrer">Explore live demo <span>↗</span></a></div></article>
+ </div>
+</section>
+<section class="all-section wrap" id="all-projects">
+ <div class="section-title"><div><div class="kicker">02 / MORE WORK</div><h2>All <span>Projects</span></h2></div><p class="section-desc">A selection of apps, experiments, and engineering work.</p></div>
+ <div class="all-grid">
+  <a class="mini-card" href="https://ai-powered-social-media-campaign-as.vercel.app/" target="_blank" rel="noopener noreferrer"><span class="mini-glyph">✳</span><div><h3>CampaignPilot AI</h3><p>AI-powered campaign planning and content workflows.</p></div><span class="mini-arrow">↗</span></a>
+  <a class="mini-card" href="https://github.com/ahmethaithem/NutriFit" target="_blank" rel="noopener noreferrer"><span class="mini-glyph">✿</span><div><h3>NutriFit</h3><p>Fitness and nutrition companion app.</p></div><span class="mini-arrow">↗</span></a>
+  <a class="mini-card" href="https://github.com/ahmethaithem/ExpenseEase" target="_blank" rel="noopener noreferrer"><span class="mini-glyph">▣</span><div><h3>ExpenseEase</h3><p>Personal expenses and finance tracking.</p></div><span class="mini-arrow">↗</span></a>
+  <a class="mini-card" href="https://ahmethaithem.github.io/omdb-project/" target="_blank" rel="noopener noreferrer"><span class="mini-glyph">▷</span><div><h3>OMDb Cinema</h3><p>Explore film titles and movie information.</p></div><span class="mini-arrow">↗</span></a>
+  <a class="mini-card" href="https://github.com/ahmethaithem/Savy-Store-website" target="_blank" rel="noopener noreferrer"><span class="mini-glyph">◇</span><div><h3>Savy Store</h3><p>React e-commerce website experience.</p></div><span class="mini-arrow">↗</span></a>
+ </div>
+</section>
+<section class="about-section wrap" id="about"><div><div class="kicker">03 / ABOUT</div><h2>Engineering meets<br><span>creativity.</span></h2></div><div class="about-copy"><p>I'm a software engineering graduate focused on creating games and useful applications. I work across Unity and C# game systems, Android development, and web technologies.</p><p>From building interactive gameplay to refining practical user interfaces, I enjoy turning complex ideas into experiences people can actually use.</p><a href="mailto:ahmethaithem@gmail.com" class="about-link">Work with me ↗</a></div></section>
+<section class="skills-section wrap" id="skills"><div class="section-title"><div><div class="kicker">04 / TOOLBOX</div><h2>Core <span>Skills</span></h2></div></div><div class="skills-grid"><div><span>01</span><h3>Game development</h3><p>Unity · C# · Gameplay systems · UI</p></div><div><span>02</span><h3>Mobile engineering</h3><p>Android · Kotlin · Flutter · Dart</p></div><div><span>03</span><h3>Web & software</h3><p>React · JavaScript · APIs · Git</p></div></div></section>
+<section class="contact-section wrap" id="contact"><div class="contact-line"></div><div class="kicker">05 / GET IN TOUCH</div><h2>Have an idea?<br><span>Let's build it.</span></h2><a class="btn btn-main" href="mailto:ahmethaithem@gmail.com">Send an email ↗</a><div class="contact-links"><a href="mailto:ahmethaithem@gmail.com">Email ↗</a><a href="tel:+905342653048" aria-label="Call +90 534 265 30 48">+90 534 265 30 48 ↗</a><a href="https://github.com/ahmethaithem" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://ahmethaithem.github.io/Portfolio-main/" target="_blank" rel="noopener noreferrer">Original portfolio ↗</a></div></section>
+</main>
+<footer class="footer wrap"><span>© 2026 Ahmed Mahmood</span><span>Designed for clarity. Built with care.</span><a href="#home">Back to top ↑</a></footer>
+<dialog id="projectDialog" class="project-dialog" aria-label="Project details"><button class="dialog-close" id="dialogClose" aria-label="Close dialog">×</button><div id="dialogContent"></div></dialog>
+<script src="script.js"></script>
+</body></html>
